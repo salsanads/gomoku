@@ -1,7 +1,7 @@
 Gomoku
 ======
 
-Five same color in a row!<br />
+Java based game, five same color in a row!<br />
 <br />
 The game rule is just same as the common Gomoku rule.<br />
 The first player color is black, players have to put a stone of their color on an empty intersection alternately. The winner is the first player who creates five stones in a row horizontally, vertically, or diagonally.<br />
