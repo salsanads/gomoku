@@ -10,7 +10,7 @@
  * cell untuk menyusun bidaknya. 
  * 
  * @author Salsabila Nadhifah
- * @version 13.12.2014
+ * @version 10.01.2015
  * 
  */
 package controller;
