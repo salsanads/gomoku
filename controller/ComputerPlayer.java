@@ -148,7 +148,7 @@ public class ComputerPlayer
 				}
 			}
 		}
-		if (max <= 4 && !countProfitWhiteDone && GameController.getNumStep() > 3) {
+		if (max <= 3 && !countProfitWhiteDone && GameController.getNumStep() > 3) {
 			countProfitWhite(cells);
 			searchMaxProfit(cells);
 		}
