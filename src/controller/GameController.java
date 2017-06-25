@@ -81,32 +81,32 @@ public class GameController implements ActionListener {
 					GomokuFrame.getBoardComponent().repaint();
 					lastColor = Cell.WHITE;
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
-					info.setText(GomokuFrame.getFirstName()
-							+ "'s turn | current color: black | total stone: "
+					info.setText("turn: " + GomokuFrame.getFirstName()
+							+ " | current color: black | total stone: "
 							+ numStep);
 				} else {
 					cell.setColor(Cell.BLACK);
 					GomokuFrame.getBoardComponent().repaint();
 					lastColor = Cell.BLACK;
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
-					info.setText(GomokuFrame.getSecondName()
-							+ "'s turn | current color: white | total stone: "
+					info.setText("turn: " + GomokuFrame.getSecondName()
+							+ " | current color: white | total stone: "
 							+ numStep);
 				}
-	
+
 				checkWinner(cell.getRow(), cell.getCol());
 				checkCellAvailability();
-	
+
 				if (!winnerFound && isPlayWithComputer) {
-	
+
 					numStep++;
-	
+
 					computerPlayer.play();
 					lastColor = Cell.WHITE;
-	
+
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
-					info.setText(GomokuFrame.getFirstName()
-							+ "'s turn | current color: black | total stone: "
+					info.setText("turn: " + GomokuFrame.getFirstName()
+							+ " | current color: black | total stone: "
 							+ numStep);
 	
 					checkWinner(computerPlayer.getRow(), computerPlayer.getCol());

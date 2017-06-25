@@ -279,9 +279,9 @@ public class GomokuFrame extends JFrame implements ActionListener
 	public static void welcomeScreen()
 	{	
 		firstName = JOptionPane.showInputDialog(null,
-				"Welcome to Gomoku Game!", "Enter First Player Name");
+				"Welcome to Gomoku Game!", "Enter first player's name");
 		firstName = firstName == null ? "first player" : firstName;
-		firstName = firstName.equals("Enter First Player Name") ? "first player"
+		firstName = firstName.equals("Enter first player's name") ? "first player"
 				: firstName;
 
 		infoComponent.clearInfo();
@@ -293,16 +293,16 @@ public class GomokuFrame extends JFrame implements ActionListener
 		if (GameController.getIsPlayWithComputer()) {
 			TimerComponent.getTimer().start();
 		}
-		
+
 		/*
 		 * jika tidak bermain melawan komputer, maka pemain kedua memasukkan namanya
 		 * dan setelah namanya dimasukkan timer permainan dimulai
 		 */
 		if (!GameController.getIsPlayWithComputer()) {
 			secondName = JOptionPane.showInputDialog(null,
-					"Welcome to Gomoku Game!", "Enter Second Player Name");
+					"Welcome to Gomoku Game!", "Enter second player's name");
 			secondName = secondName == null ? "second player" : secondName;
-			secondName = secondName.equals("Enter Second Player Name") ? "second player"
+			secondName = secondName.equals("Enter second player's name") ? "second player"
 					: secondName;
 			TimerComponent.getTimer().start();
 		}
