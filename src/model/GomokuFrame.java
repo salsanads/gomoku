@@ -116,6 +116,7 @@ public class GomokuFrame extends JFrame implements ActionListener
 		play2PlayerButton.setOpaque(false);
 		play2PlayerButton.setContentAreaFilled(false);
 		play2PlayerButton.addActionListener(this);
+		play2PlayerButton.setFocusPainted(false);
 		
 		/*
 		 * variabel playWithComputerButton merupakan button yang dipilih
@@ -127,6 +128,7 @@ public class GomokuFrame extends JFrame implements ActionListener
 		playWithComputerButton.setOpaque(false);
 		playWithComputerButton.setContentAreaFilled(false);
 		playWithComputerButton.addActionListener(this);
+		playWithComputerButton.setFocusPainted(false);
 		
 		/*
 		 * variabel exitButton merupakan button yang dipilih jika pemain
@@ -138,6 +140,7 @@ public class GomokuFrame extends JFrame implements ActionListener
 		exitButton.setOpaque(false);
 		exitButton.setContentAreaFilled(false);
 		exitButton.addActionListener(this);
+		exitButton.setFocusPainted(false);
 
 		container.add(title);
 		container.add(play2PlayerButton);
