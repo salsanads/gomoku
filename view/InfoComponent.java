@@ -31,7 +31,7 @@ public class InfoComponent extends JPanel
 	public InfoComponent()
 	{
 		currentPlayer = new JLabel(GomokuFrame.getFirstName()
-				+ " turn | current color : black | total stone : 0");
+				+ "'s turn | current color: black | total stone: 0");
 		currentPlayer.setFont(new Font("SansSerif", Font.PLAIN, 20));
 		currentPlayer.setForeground(Color.WHITE);
 		add(currentPlayer);
@@ -52,6 +52,6 @@ public class InfoComponent extends JPanel
 	public void clearInfo()
 	{
 		currentPlayer.setText(GomokuFrame.getFirstName()
-				+ " turn | current color : black | total stone : 0");
+				+ "'s turn | current color: black | total stone: 0");
 	}
 }

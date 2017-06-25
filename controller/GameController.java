@@ -82,7 +82,7 @@ public class GameController implements ActionListener {
 					lastColor = Cell.WHITE;
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
 					info.setText(GomokuFrame.getFirstName()
-							+ " turn | current color : black | total stone : "
+							+ "'s turn | current color: black | total stone: "
 							+ numStep);
 				} else {
 					cell.setColor(Cell.BLACK);
@@ -90,7 +90,7 @@ public class GameController implements ActionListener {
 					lastColor = Cell.BLACK;
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
 					info.setText(GomokuFrame.getSecondName()
-							+ " turn | current color : white | total stone : "
+							+ "'s turn | current color: white | total stone: "
 							+ numStep);
 				}
 	
@@ -106,7 +106,7 @@ public class GameController implements ActionListener {
 	
 					JLabel info = GomokuFrame.getInfoComponent().getCurrentPlayer();
 					info.setText(GomokuFrame.getFirstName()
-							+ " turn | current color : black | total stone : "
+							+ "'s turn | current color: black | total stone: "
 							+ numStep);
 	
 					checkWinner(computerPlayer.getRow(), computerPlayer.getCol());
@@ -252,7 +252,7 @@ public class GameController implements ActionListener {
 			info.setText("ouch! you lose!");
 		}
 		else {
-			info.setText("bravo! " + name + " win with " + numStep + " step!");
+			info.setText("bravo! " + name + " wins with " + numStep + " step!");
 		}
 	}
 
